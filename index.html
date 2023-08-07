@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title> aruns Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>We value your feedback! Please take a moment to complete this survey about your recent experience with avodha</p>
+        <form id="survey-form">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" required>
+            
+            <label for="gender">Gender:</label>
+            <label>
+                <input type="radio" name="interests" value="male">
+                male
+            
+            
+                <input type="radio" name="interests" value="female">
+                female
+            
+            
+                <input type="radio" name="interests" value="others">
+                others
+            </label>
+            <label for="gender">Are there any features or improvements you would like to see in our product/service?:</label>
+            <label>
+                <input type="radio" name="interests" value="yes">
+                yes  
+            
+                <input type="radio" name="interests" value="no">
+                no 
+            </label>
+            <label>
+                
+                
+            </label>
+            <label for="gender">Do you feel that our product/service offers good value for its price?:</label>
+            <label>
+                <input type="radio" name="interests" value="yes">
+                yes  
+                <input type="radio" name="interests" value="no">
+                no 
+            </label>
+            <label>
+                
+            
+                <label for="feedback">Is there anything else you would like to share about your experience with our product/service?:</label>
+                <textarea id="feedback" name="feedback" rows="2"></textarea>
+    
+                
+              
+            <label>
+                
+            
+            <label for="feedback">How is our service:</label>
+            <textarea id="feedback" name="feedback" rows="2"></textarea>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating"  rows ="1"name="rating" min="1" max="10" required>
+
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
