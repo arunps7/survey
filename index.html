@@ -7,57 +7,93 @@
     <title> aruns Survey Form</title>
 </head>
 <body>
+    
     <div class="container">
-        <h1>Survey Form</h1>
-        <p>We value your feedback! Please take a moment to complete this survey about your recent experience with avodha</p>
-        <form id="survey-form">
+       
             
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+        <p>We value your feedback! Please take a moment to complete this survey about your recent experience with avodha</p>
+       
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required placeholder="Name">
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Email">
             
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="18" required>
+            <input type="number" id="age" name="age" min="18" required placeholder="Age">
+            <label for="name">DOB:</label>
+            <input type="number" id="DOB" name="DOB" required placeholder="DOB">
+            <label="form-group">Which option best describe your current role
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
             
             <label for="gender">Gender:</label>
             <label>
                 <input type="radio" name="interests" value="male">
-                male
+                Male
             
             
                 <input type="radio" name="interests" value="female">
-                female
+                Female
             
             
                 <input type="radio" name="interests" value="others">
-                others
+                Others
             </label>
+            <br>
             <label for="gender">Are there any features or improvements you would like to see in our product/service?:</label>
             <label>
                 <input type="radio" name="interests" value="yes">
-                yes  
+                Yes  
             
                 <input type="radio" name="interests" value="no">
-                no 
+                No 
             </label>
-            <label>
-                
-                
-            </label>
-            <label for="gender">Do you feel that our product/service offers good value for its price?:</label>
+           <br>
+
+            <label for="aaa">Do you feel that our product/service offers good value for its price?:</label>
             <label>
                 <input type="radio" name="interests" value="yes">
-                yes  
+                Yes  
                 <input type="radio" name="interests" value="no">
-                no 
+                No 
             </label>
+            <br>
+            <label for="aaa">Are you happy about our service</label>
+            <label>
+                <input type="radio" name="interests" value="yes">
+                Happy
+                <input type="radio" name="interests" value="no">
+                Not Happy
+                <input type="radio" name="interests" value="no">
+                I am not interset to talk
+            </label>
+            <br>
+            <label for="aaa">Would  you like prefer this course to someone</label>
+            <label>
+                <input type="radio" name="interests" value="yes">
+                  prefer
+                <input type="radio" name="interests" value="no">
+                Not prefer
+                <input type="radio" name="interests" value="no">
+                I am not interset to talk
+            </label>
+            <br>
+            
             <label>
                 
             
                 <label for="feedback">Is there anything else you would like to share about your experience with our product/service?:</label>
                 <textarea id="feedback" name="feedback" rows="2"></textarea>
+                <br>
     
                 
               
@@ -66,8 +102,7 @@
             
             <label for="feedback">How is our service:</label>
             <textarea id="feedback" name="feedback" rows="2"></textarea>
-            <label for="rating">Rating:</label>
-            <input type="number" id="rating"  rows ="1"name="rating" min="1" max="10" required>
+            
 
             
             <button type="submit">Submit</button>
